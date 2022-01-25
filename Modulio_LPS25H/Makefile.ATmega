@@ -1,0 +1,21 @@
+.SUFFIXES: .o .c .s
+INCLUDE=-I../Lib_Modulio -I../
+VPATH=src:../Lib_Modulio
+BIN=test_lps25h
+OBJS=main.o Modulio_HAL.o Modulio_Common.o ACM1602.o LPS25H.o
+
+CC=avr-gcc
+OBJCOPY=avr-objcopy
+CFLAGS=-O1 -DF_CPU=8000000UL -mmcu=atmega328p
+
+${BIN}.hex: ${BIN}.elf
+	${OBJCOPY} -O ihex -R .eeprom $< $@
+
+${BIN}.elf: ${OBJS}
+	${CC} ${CFLAGS} -o $@ $^
+
+.c.o:
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+
+clean:
+	rm -f ${BIN}.elf ${BIN}.hex ${OBJS}
