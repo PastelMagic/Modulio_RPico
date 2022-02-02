@@ -12,16 +12,16 @@ include_directories (
 	$("..")
 	$("../Lib_Modulio")
 	)
-add_executable(test_adxl345
+add_executable(test_slcd
 	main.c
 	../Lib_Modulio/Modulio_RPico.c
 	../Lib_Modulio/ACM1602.c
 	../Lib_Modulio/ADXL345.c
 )
 
-pico_enable_stdio_usb(test_adxl345 1)
-pico_enable_stdio_uart(test_adxl345 1)
-pico_add_extra_outputs(test_adxl345)
-target_link_libraries(test_adxl345 pico_stdlib hardware_i2c)
+pico_enable_stdio_usb(test_slcd 1)
+pico_enable_stdio_uart(test_slcd 1)
+pico_add_extra_outputs(test_slcd)
+target_link_libraries(test_slcd pico_stdlib hardware_i2c)
 
 

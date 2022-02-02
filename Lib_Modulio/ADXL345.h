@@ -10,13 +10,13 @@
 typedef struct ADXL345_STRUC {
 	MI2CADRS	madrs;
 	UINT8		ID;
-	UINT16		xdat;
-	UINT16		ydat;
-	UINT16		zdat;
+	UINT16		xdat;	// X-axis Data
+	UINT16		ydat;	// Y-axis Data
+	UINT16		zdat;	// Z-axis Data
 
 	UINT8	(*Start)(struct ADXL345_STRUC *p);
 	UINT8	(*GetID)(struct ADXL345_STRUC *p);
-	void	(*GetVal)(struct ADXL345_STRUC *p);
+	void	(*GetVal)(struct ADXL345_STRUC *p);	// Get Acc. Data
 } ADXL345;
 
 #ifndef EXTERN

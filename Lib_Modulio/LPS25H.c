@@ -1,6 +1,6 @@
 //---------------------------------------
 //- LPS25H Pressure Sensor
-//- ï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T
+//- ‰·“xE‹Cˆ³ƒZƒ“ƒT
 //---------------------------------------
 #define	EXTERN
 #include "Modulio.h"
@@ -9,7 +9,7 @@
 
 //-------------------------------------------
 //--- Initialize Device
-//--- ï¿½fï¿½oï¿½Cï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//--- ƒfƒoƒCƒX‰Šú‰»
 //-------------------------------------------
 static UINT8	LPS25H_Start(LPS25H *p)
 {
@@ -24,9 +24,9 @@ static UINT8	LPS25H_Start(LPS25H *p)
 }
 
 //-------------------------------------------
-//--- Read PRESSOUT(Pressureï¿½j Registers
-//--- PRESS[0]:LSBï¿½@PRESS[2]ï¿½FMSB
-//--- ï¿½ï¿½ï¿½Íƒï¿½ï¿½Wï¿½Xï¿½^ï¿½lï¿½Ç‚İï¿½ï¿½ï¿½
+//--- Read PRESSOUT(Pressure) Registers
+//--- 0x28(PRESS[0]:LSB) - 0x2A(PRESS[2]:MSB)
+//--- 0x28‚©‚ç0x2a‚Ì3ƒoƒCƒg‚ª‹Cˆ³i0x28‚ªLSB)
 //-------------------------------------------
 static UINT8	LPS25H_ReadPress(LPS25H *p)
 {
@@ -41,9 +41,9 @@ static UINT8	LPS25H_ReadPress(LPS25H *p)
 
 //---------------------------------------------------
 //--- Convert PRESS Reg.Value
-//--- PRESS[0](MSB)ï¿½FPRESS[1]ï¿½iLSB):Integer Part
+//--- PRESS[0](MSB)-PRESS[1][LSB):Integer Part
 //--- PRESS[2]:Fractional Part
-//--- ï¿½ï¿½ï¿½Íƒfï¿½[ï¿½^ï¿½lï¿½ÏŠï¿½
+//--- PRESS[0]-[2]‚Ì’l‚ğ®”•”•ª‚Æ¬”“_ˆÈ‰º‚É•ªŠ„
 //---------------------------------------------------
 static void	LPS25H_wConvPress(LPS25H *p)
 {
@@ -56,8 +56,8 @@ static void	LPS25H_wConvPress(LPS25H *p)
 }
 
 //-------------------------------------------
-//--- Read Temp. ï¿½iTEMP_OUT) Register
-//--- ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½Wï¿½Xï¿½^ï¿½lï¿½Ç‚İï¿½ï¿½ï¿½
+//--- Read Temp(TEMP_OUT_L/H) Register
+//--- TEMP_OUTƒŒƒWƒXƒ^‚Å‰·“x“Ç‚İ‚İ
 //-------------------------------------------
 static UINT8	LPS25H_ReadTemp(LPS25H *p)
 {
@@ -71,12 +71,13 @@ static UINT8	LPS25H_ReadTemp(LPS25H *p)
 }
 
 //-------------------------------------------
+//--- Convert Temp. Data
 //--- TEMP[0]:Integer Part
 //--- TMEP[1]:Fractional Part
-//--- ï¿½ï¿½ï¿½xï¿½fï¿½[ï¿½^ï¿½lï¿½ÏŠï¿½
 //--- 42.5+(TEMP_OUT/480)
-//--- ï¿½ï¿½ï¿½ï¿½ï¿½Fï¿½ï¿½ï¿½ï¿½ï¿½ibit7ï¿½jï¿½{ï¿½ï¿½Î’lï¿½ibit6ï¿½`0)
-//--- ï¿½ï¿½ï¿½ï¿½ï¿½F2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½
+//--- ƒŒƒWƒXƒ^’l‚©‚ç¬”“_‰·“xƒf[ƒ^‚É•ÏŠ·
+//--- TEMP[0]F®”•”•ª
+//--- TEMP[1]F¬”“_ˆÈ‰º
 //-------------------------------------------
 static void	LPS25H_wConvTemp(LPS25H *p)
 {
@@ -98,7 +99,8 @@ static void	LPS25H_wConvTemp(LPS25H *p)
 }
 
 //-------------------------------------------
-//--- ï¿½Xï¿½eï¿½[ï¿½^ï¿½Xï¿½ï¿½ï¿½Wï¿½Xï¿½^ï¿½Ç‚İï¿½ï¿½ï¿½
+//--- Read Status Register
+//--- ƒXƒe[ƒ^ƒXƒŒƒWƒXƒ^“Ç‚İ‚İ
 //-------------------------------------------
 static UINT8	LPS25H_ReadStatus(LPS25H *p)
 {
@@ -108,7 +110,8 @@ static UINT8	LPS25H_ReadStatus(LPS25H *p)
 }
 
 //-------------------------------------------
-//--- LPS25Hï¿½\ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½
+//--- Initialize Structure
+//--- \‘¢‘Ì‚Ì‰Šú‰»
 //-------------------------------------------
 void LPS25H_Setup(
 	LPS25H *p,

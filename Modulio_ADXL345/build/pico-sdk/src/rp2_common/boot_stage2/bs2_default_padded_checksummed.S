@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /mnt/hgfs/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

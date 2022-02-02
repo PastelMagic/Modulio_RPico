@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pastelmagic/pico/pico-sdk/tools/elf2uf2/main.cpp" "/mnt/hgfs/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/elf2uf2/CMakeFiles/elf2uf2.dir/main.cpp.o"
+  "/home/pastelmagic/pico/pico-sdk/tools/elf2uf2/main.cpp" "/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/elf2uf2/CMakeFiles/elf2uf2.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

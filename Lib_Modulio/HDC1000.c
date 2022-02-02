@@ -103,22 +103,6 @@ static void HDC1000_wConvHum(HDC1000 *p)
 	p->HUM[1] = ((dat & 0xff)*100)>>8;
 }
 
-//****
-#if 0
-static float f,h;
-float HDC1000_ConvTemp(UINT16 temp)
-{
-	p->ff = ((float)temp)*165/65536-40.0;
-	return(f);
-}
-
-float HDC1000_ConvHum(UINT16 hum)
-{
-	h = ((float)hum)*100/65536;
-	return(h);
-}
-#endif
-
 //---------------------------------------
 //--- Init Structure
 //--- 構造体初期化

@@ -44,6 +44,11 @@ static void ADXL345_GetVal(ADXL345 *p)
 	p->zdat = ((buf[1] & 0x3) << 8) | buf[0];
 }
 
+//----------------------------------------
+// Initialize ADXL345 Obuject
+// ADXL345オブジェクトの初期化
+//----------------------------------------
+//
 void ADXL345_Setup(
 		ADXL345 *p,
 		UINT8 bswadrs,

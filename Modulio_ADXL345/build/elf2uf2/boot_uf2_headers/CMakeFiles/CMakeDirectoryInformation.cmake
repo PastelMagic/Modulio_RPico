@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/pastelmagic/pico/pico-sdk/src/common/boot_uf2")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/mnt/hgfs/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/elf2uf2")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/elf2uf2")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

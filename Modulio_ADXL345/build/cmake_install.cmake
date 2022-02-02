@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345
+# Install script for directory: /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/hgfs/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/pico-sdk/cmake_install.cmake")
+  include("/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/pico-sdk/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/hgfs/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
