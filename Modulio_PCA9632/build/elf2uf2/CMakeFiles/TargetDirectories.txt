@@ -1,0 +1,5 @@
+/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_PCA9632/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_PCA9632/build/elf2uf2/CMakeFiles/edit_cache.dir
+/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_PCA9632/build/elf2uf2/CMakeFiles/elf2uf2.dir
+/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_PCA9632/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
+/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_PCA9632/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
