@@ -49,8 +49,9 @@ void exec_gsense(void)
 
 int main(void)
 {
-
+#if RaspiPico
 	stdio_init_all();
+#endif
 
 	MI2C_Start();
 	ACM1602_Setup(&lcd, BSW_ADRS_NONE, 0, ACM1602_ADRS0, 0);
