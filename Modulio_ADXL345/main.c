@@ -9,8 +9,9 @@
 #include "ADXL345.h"
 #undef EXTERN
 
-
+#if RaspiPico
 #include "pico/stdlib.h"
+#endif
 
 ACM1602	lcd;
 ADXL345	gsense;
@@ -69,7 +70,9 @@ int main(void)
 
 	while(1) {
 		exec_gsense();
+#if RaspiPico
 		printf("X:%04XH Y:%04XH Z:%04XH\n",gsense.xdat, gsense.ydat, gsense.zdat);
+#endif
 		MI2C_Waitms(100);
 	}
 }

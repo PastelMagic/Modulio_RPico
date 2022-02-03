@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD
+CMAKE_SOURCE_DIR = /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build
+CMAKE_BINARY_DIR = /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/CMakeFiles /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/CMakeFiles /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,17 +124,17 @@ ELF2UF2Build/fast:
 .PHONY : ELF2UF2Build/fast
 
 #=============================================================================
-# Target rules for targets named test_slcd
+# Target rules for targets named test_adxl345
 
 # Build rule for target.
-test_slcd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_slcd
-.PHONY : test_slcd
+test_adxl345: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_adxl345
+.PHONY : test_adxl345
 
 # fast build rule for target.
-test_slcd/fast:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/build
-.PHONY : test_slcd/fast
+test_adxl345/fast:
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/build
+.PHONY : test_adxl345/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default_padded_checksummed_asm
@@ -181,7 +181,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: hom
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -190,7 +190,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -199,7 +199,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -208,7 +208,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/pa
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -217,7 +217,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/past
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -226,7 +226,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/past
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -235,7 +235,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/pa
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -244,7 +244,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/past
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -253,7 +253,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/past
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -262,7 +262,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -271,7 +271,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/p
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -280,7 +280,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/p
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -289,7 +289,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/pa
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -298,7 +298,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/past
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -307,7 +307,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/past
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -316,7 +316,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -325,7 +325,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/pa
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -334,7 +334,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/pa
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -343,7 +343,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/pa
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -352,7 +352,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/past
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -361,7 +361,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/past
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
@@ -370,7 +370,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: h
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -379,7 +379,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: hom
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -388,7 +388,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: hom
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
@@ -397,7 +397,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/pa
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -406,7 +406,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/past
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -415,7 +415,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/past
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -424,7 +424,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: h
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -433,7 +433,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: hom
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -442,7 +442,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: hom
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -451,7 +451,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: h
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -460,7 +460,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: hom
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -469,7 +469,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: hom
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
@@ -478,7 +478,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: hom
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -487,7 +487,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -496,7 +496,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
@@ -505,7 +505,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/pastel
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -514,7 +514,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/pastelma
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -523,7 +523,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/pastelma
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -532,7 +532,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/pastelmagic
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -541,7 +541,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/pastelmagic/p
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -550,7 +550,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/pastelmagic/p
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
@@ -559,7 +559,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/pas
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -568,7 +568,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/paste
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -577,7 +577,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/paste
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -586,7 +586,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_r
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -595,7 +595,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_r
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -604,7 +604,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_r
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
@@ -613,7 +613,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp204
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -622,7 +622,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp204
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -631,7 +631,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp204
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
@@ -640,7 +640,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/pastelmagic/pico/p
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -649,7 +649,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/pastelmagic/pico/pic
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -658,7 +658,7 @@ home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/pastelmagic/pico/pic
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -667,7 +667,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/p
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -676,7 +676,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/pas
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -685,7 +685,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/pas
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -694,7 +694,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/pastelma
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -703,7 +703,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/pastelmagi
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -712,7 +712,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/pastelmagi
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -721,7 +721,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/pastelmagic/
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.i: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -730,7 +730,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.i: home/pastelmagic/pi
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.s: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -739,7 +739,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.s: home/pastelmagic/pi
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.obj: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -748,7 +748,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.obj: home/pastelmagic/pi
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.i: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -757,7 +757,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.i: home/pastelmagic/pico
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.s: home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -766,7 +766,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.s: home/pastelmagic/pico
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.obj: home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -775,7 +775,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.obj: home/pastelmagic/p
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.i: home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -784,7 +784,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.i: home/pastelmagic/pic
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.i
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.s: home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -793,7 +793,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.s: home/pastelmagic/pic
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_time/time.c.s
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -802,7 +802,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/pas
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -811,7 +811,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/paste
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -820,7 +820,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/paste
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.obj: home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -829,7 +829,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.obj: home/pastelmag
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.i: home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -838,7 +838,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.i: home/pastelmagic
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.s: home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -847,7 +847,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.s: home/pastelmagic
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.obj: home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -856,7 +856,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.obj: home/pastelmagic/
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.i: home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -865,7 +865,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.i: home/pastelmagic/pi
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.s: home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -874,7 +874,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.s: home/pastelmagic/pi
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.obj: home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -883,7 +883,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.obj: home/pastelmagic/
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.i: home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -892,7 +892,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.i: home/pastelmagic/pi
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.s: home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -901,7 +901,7 @@ home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.s: home/pastelmagic/pi
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -910,7 +910,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/pas
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -919,7 +919,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/paste
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -928,7 +928,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/paste
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -937,7 +937,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/p
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -946,7 +946,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/pas
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -955,7 +955,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/pas
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -964,7 +964,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
@@ -973,7 +973,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/pas
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -982,7 +982,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/paste
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -991,7 +991,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/paste
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -1000,7 +1000,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/paste
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -1009,7 +1009,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/pastelm
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1018,7 +1018,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/pastelm
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
@@ -1027,7 +1027,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/pastelm
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
@@ -1036,7 +1036,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/pastelmag
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
@@ -1045,7 +1045,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/pastelmag
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -1054,7 +1054,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/pastelm
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1063,7 +1063,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/pastelmag
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1072,7 +1072,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/pastelmag
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -1081,7 +1081,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -1090,7 +1090,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/pastelm
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1099,7 +1099,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/pastelmag
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1108,7 +1108,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/pastelmag
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -1117,7 +1117,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/paste
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1126,7 +1126,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/pastelm
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1135,7 +1135,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/pastelm
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -1144,7 +1144,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/pas
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1153,7 +1153,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/paste
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1162,7 +1162,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/paste
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -1171,7 +1171,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/paste
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1180,7 +1180,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/pastelm
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1189,7 +1189,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/pastelm
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -1198,7 +1198,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/paste
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1207,7 +1207,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/pastelm
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1216,7 +1216,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/pastelm
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -1225,7 +1225,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: ho
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1234,7 +1234,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1243,7 +1243,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -1252,7 +1252,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/paste
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1261,7 +1261,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/pastelm
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1270,7 +1270,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/pastelm
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -1279,7 +1279,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: ho
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1288,7 +1288,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/pas
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1297,7 +1297,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/paste
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1306,7 +1306,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/paste
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -1315,7 +1315,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/pas
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1324,7 +1324,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1333,7 +1333,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: h
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1342,7 +1342,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: hom
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1351,7 +1351,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: hom
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1360,7 +1360,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1369,7 +1369,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/pa
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1378,7 +1378,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/pa
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1387,7 +1387,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -1396,7 +1396,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumera
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1405,7 +1405,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumera
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1414,7 +1414,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumera
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1423,7 +1423,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/p
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1432,7 +1432,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: hom
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1441,7 +1441,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1450,7 +1450,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1459,7 +1459,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/pa
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1468,7 +1468,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/past
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1477,7 +1477,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/past
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1486,7 +1486,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: 
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1495,7 +1495,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeab
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1504,7 +1504,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1513,7 +1513,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/pa
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1522,7 +1522,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/pa
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1531,7 +1531,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: ho
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1540,7 +1540,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/p
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1549,7 +1549,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/pas
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1558,7 +1558,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/pas
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1567,7 +1567,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/paste
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1576,7 +1576,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/pastelm
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1585,7 +1585,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/pastelm
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1594,7 +1594,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/pas
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1603,7 +1603,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/paste
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1612,7 +1612,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/paste
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1621,7 +1621,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1630,7 +1630,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: 
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1639,7 +1639,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: 
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1648,7 +1648,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1657,7 +1657,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj:
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1666,7 +1666,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: h
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1675,7 +1675,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: h
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1684,7 +1684,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/pastelm
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1693,7 +1693,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/pastelmag
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1702,7 +1702,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/pastelmag
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1711,7 +1711,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: ho
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1720,7 +1720,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1729,7 +1729,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
@@ -1738,7 +1738,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -1747,7 +1747,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: 
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -1756,7 +1756,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: 
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
@@ -1765,7 +1765,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -1774,7 +1774,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/p
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -1783,7 +1783,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/p
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
@@ -1792,7 +1792,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descripto
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -1801,7 +1801,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descripto
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -1810,7 +1810,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descripto
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1819,7 +1819,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/paste
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1828,7 +1828,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/pastelm
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1837,7 +1837,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/pastelm
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -1846,7 +1846,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home
 
 # target to build an object file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -1855,7 +1855,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/p
 
 # target to preprocess a source file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -1864,7 +1864,7 @@ home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/p
 
 # target to generate assembly for a file
 home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/pastelmagic/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.obj: home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.obj
@@ -1873,7 +1873,7 @@ home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602
 
 # target to build an object file
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.obj
 .PHONY : home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.obj
 
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.i: home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.i
@@ -1882,7 +1882,7 @@ home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602
 
 # target to preprocess a source file
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.i
 .PHONY : home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.i
 
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.s: home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.s
@@ -1891,7 +1891,7 @@ home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602
 
 # target to generate assembly for a file
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.s
 .PHONY : home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ACM1602.c.s
 
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.obj: home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.obj
@@ -1900,7 +1900,7 @@ home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345
 
 # target to build an object file
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.obj
 .PHONY : home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.obj
 
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.i: home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.i
@@ -1909,7 +1909,7 @@ home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345
 
 # target to preprocess a source file
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.i
 .PHONY : home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.i
 
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.s: home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.s
@@ -1918,7 +1918,7 @@ home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345
 
 # target to generate assembly for a file
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.s
 .PHONY : home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/ADXL345.c.s
 
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.obj: home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.obj
@@ -1927,7 +1927,7 @@ home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio
 
 # target to build an object file
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.obj
 .PHONY : home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.obj
 
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.i: home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.i
@@ -1936,7 +1936,7 @@ home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio
 
 # target to preprocess a source file
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.i
 .PHONY : home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.i
 
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.s: home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.s
@@ -1945,7 +1945,7 @@ home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio
 
 # target to generate assembly for a file
 home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.s
 .PHONY : home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Lib_Modulio/Modulio_RPico.c.s
 
 main.obj: main.c.obj
@@ -1954,7 +1954,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/main.c.obj
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -1963,7 +1963,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/main.c.i
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -1972,7 +1972,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/test_slcd.dir/build.make CMakeFiles/test_slcd.dir/main.c.s
+	$(MAKE) -f CMakeFiles/test_adxl345.dir/build.make CMakeFiles/test_adxl345.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -1984,7 +1984,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ELF2UF2Build"
-	@echo "... test_slcd"
+	@echo "... test_adxl345"
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default"

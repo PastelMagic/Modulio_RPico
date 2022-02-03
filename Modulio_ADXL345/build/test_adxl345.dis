@@ -1,5 +1,5 @@
 
-/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/test_slcd.elf:     file format elf32-littlearm
+/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/test_adxl345.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -7,13 +7,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   1 .text         00007a38  10000100  10000100  00001100  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00000580  10007b38  10007b38  00008b38  2**3
+  2 .rodata       00000584  10007b38  10007b38  00008b38  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .binary_info  0000002c  100080b8  100080b8  000090b8  2**2
+  3 .binary_info  0000002c  100080bc  100080bc  000090bc  2**2
                   CONTENTS, ALLOC, LOAD, DATA
   4 .ram_vector_table 000000c0  20000000  20000000  0000a49c  2**2
                   CONTENTS
-  5 .data         000003dc  200000c0  100080e4  0000a0c0  2**4
+  5 .data         000003dc  200000c0  100080e8  0000a0c0  2**4
                   CONTENTS, ALLOC, LOAD, CODE
   6 .uninitialized_data 00000000  2000049c  2000049c  0000a55c  2**0
                   CONTENTS
@@ -46,7 +46,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
  20 .debug_frame  00000028  00000000  00000000  0000cae0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
-/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/test_slcd.elf:     file format elf32-littlearm
+/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/test_adxl345.elf:     file format elf32-littlearm
 
 
 Disassembly of section .boot2:
@@ -194,8 +194,8 @@ Disassembly of section .text:
 
 100001d4 <binary_info_header>:
 100001d4:	7188ebf2 	.word	0x7188ebf2
-100001d8:	100080b8 	.word	0x100080b8
-100001dc:	100080e4 	.word	0x100080e4
+100001d8:	100080bc 	.word	0x100080bc
+100001dc:	100080e8 	.word	0x100080e8
 100001e0:	10000234 	.word	0x10000234
 100001e4:	e71aa390 	.word	0xe71aa390
 
@@ -250,13 +250,13 @@ Disassembly of section .text:
 10000232:	4770      	bx	lr
 
 10000234 <data_cpy_table>:
-10000234:	100080e4 	.word	0x100080e4
+10000234:	100080e8 	.word	0x100080e8
 10000238:	200000c0 	.word	0x200000c0
 1000023c:	2000049c 	.word	0x2000049c
-10000240:	100084c0 	.word	0x100084c0
+10000240:	100084c4 	.word	0x100084c4
 10000244:	20040000 	.word	0x20040000
 10000248:	20040000 	.word	0x20040000
-1000024c:	100084c0 	.word	0x100084c0
+1000024c:	100084c4 	.word	0x100084c4
 10000250:	20041000 	.word	0x20041000
 10000254:	20041000 	.word	0x20041000
 10000258:	00000000 	.word	0x00000000
@@ -288,10 +288,10 @@ Disassembly of section .text:
 1000029c:	50520006 02031c86 10007e50              ..RP....P~..
 
 100002a8 <__bi_30>:
-100002a8:	50520006 9da22254 10007e5c              ..RPT"..\~..
+100002a8:	50520006 9da22254 10007e60              ..RPT"..`~..
 
 100002b4 <__bi_22>:
-100002b4:	50520005 68f465de 100084c0              ..RP.e.h....
+100002b4:	50520005 68f465de 100084c4              ..RP.e.h....
 
 100002c0 <_init>:
 100002c0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
@@ -9188,7 +9188,7 @@ Disassembly of section .text:
 100049c6:	4798      	blx	r3
 100049c8:	e7e5      	b.n	10004996 <stdio_out_chars_crlf+0x5a>
 100049ca:	46c0      	nop			; (mov r8, r8)
-100049cc:	10007e8c 	.word	0x10007e8c
+100049cc:	10007e90 	.word	0x10007e90
 
 100049d0 <stdio_buffered_printer>:
 100049d0:	b5f0      	push	{r4, r5, r6, r7, lr}
@@ -9705,9 +9705,9 @@ Disassembly of section .text:
 10004dfc:	f7ff ff0a 	bl	10004c14 <stdio_set_driver_enabled>
 10004e00:	bd10      	pop	{r4, pc}
 10004e02:	46c0      	nop			; (mov r8, r8)
-10004e04:	100080d8 	.word	0x100080d8
+10004e04:	100080dc 	.word	0x100080dc
 10004e08:	40034000 	.word	0x40034000
-10004e0c:	100080dc 	.word	0x100080dc
+10004e0c:	100080e0 	.word	0x100080e0
 10004e10:	20000f48 	.word	0x20000f48
 10004e14:	20000420 	.word	0x20000420
 
@@ -9800,7 +9800,7 @@ Disassembly of section .text:
 10004eba:	7003      	strb	r3, [r0, #0]
 10004ebc:	4800      	ldr	r0, [pc, #0]	; (10004ec0 <usbd_app_driver_get_cb+0x8>)
 10004ebe:	4770      	bx	lr
-10004ec0:	10007ed0 	.word	0x10007ed0
+10004ec0:	10007ed4 	.word	0x10007ed4
 
 10004ec4 <tud_cdc_line_coding_cb>:
 10004ec4:	784a      	ldrb	r2, [r1, #1]
@@ -10058,7 +10058,7 @@ Disassembly of section .text:
 100050f4:	f7ff fd8e 	bl	10004c14 <stdio_set_driver_enabled>
 100050f8:	e7f1      	b.n	100050de <stdio_usb_init+0x5e>
 100050fa:	46c0      	nop			; (mov r8, r8)
-100050fc:	100080e0 	.word	0x100080e0
+100050fc:	100080e4 	.word	0x100080e4
 10005100:	1000505d 	.word	0x1000505d
 10005104:	20000f30 	.word	0x20000f30
 10005108:	1000504d 	.word	0x1000504d
@@ -10067,12 +10067,12 @@ Disassembly of section .text:
 10005110 <tud_descriptor_device_cb>:
 10005110:	4800      	ldr	r0, [pc, #0]	; (10005114 <tud_descriptor_device_cb+0x4>)
 10005112:	4770      	bx	lr
-10005114:	10007f88 	.word	0x10007f88
+10005114:	10007f8c 	.word	0x10007f8c
 
 10005118 <tud_descriptor_configuration_cb>:
 10005118:	4800      	ldr	r0, [pc, #0]	; (1000511c <tud_descriptor_configuration_cb+0x4>)
 1000511a:	4770      	bx	lr
-1000511c:	10007f34 	.word	0x10007f34
+1000511c:	10007f38 	.word	0x10007f38
 
 10005120 <tud_descriptor_string_cb>:
 10005120:	b570      	push	{r4, r5, r6, lr}
@@ -10125,7 +10125,7 @@ Disassembly of section .text:
 10005180:	20000f4c 	.word	0x20000f4c
 10005184:	20000ad4 	.word	0x20000ad4
 10005188:	00000409 	.word	0x00000409
-1000518c:	10007f9c 	.word	0x10007f9c
+1000518c:	10007fa0 	.word	0x10007fa0
 
 10005190 <dcd_rp2040_irq>:
 10005190:	b5f0      	push	{r4, r5, r6, r7, lr}
@@ -10365,7 +10365,7 @@ Disassembly of section .text:
 1000539c:	50100070 	.word	0x50100070
 100053a0:	20000f0c 	.word	0x20000f0c
 100053a4:	50100180 	.word	0x50100180
-100053a8:	10007fb4 	.word	0x10007fb4
+100053a8:	10007fb8 	.word	0x10007fb8
 
 100053ac <dcd_int_enable>:
 100053ac:	b510      	push	{r4, lr}
@@ -10818,7 +10818,7 @@ Disassembly of section .text:
 1000578a:	f7fc fab3 	bl	10001cf4 <panic>
 1000578e:	46c0      	nop			; (mov r8, r8)
 10005790:	20000448 	.word	0x20000448
-10005794:	10007fc8 	.word	0x10007fc8
+10005794:	10007fcc 	.word	0x10007fcc
 
 10005798 <rp2040_usb_init>:
 10005798:	2280      	movs	r2, #128	; 0x80
@@ -11274,7 +11274,7 @@ Disassembly of section .text:
 10005b3c:	fffffbff 	.word	0xfffffbff
 10005b40:	dfffffff 	.word	0xdfffffff
 10005b44:	20000448 	.word	0x20000448
-10005b48:	10007fe8 	.word	0x10007fe8
+10005b48:	10007fec 	.word	0x10007fec
 
 10005b4c <tud_mounted>:
 10005b4c:	4b02      	ldr	r3, [pc, #8]	; (10005b58 <tud_mounted+0xc>)
@@ -11775,7 +11775,7 @@ Disassembly of section .text:
 10005f6e:	009b      	lsls	r3, r3, #2
 10005f70:	58d3      	ldr	r3, [r2, r3]
 10005f72:	469f      	mov	pc, r3
-10005f74:	10008014 	.word	0x10008014
+10005f74:	10008018 	.word	0x10008018
 10005f78:	20000954 	.word	0x20000954
 10005f7c:	200008fc 	.word	0x200008fc
 10005f80:	10004eb9 	.word	0x10004eb9
@@ -11785,7 +11785,7 @@ Disassembly of section .text:
 10005f94:	200005c4 	.word	0x200005c4
 10005f98:	10006d25 	.word	0x10006d25
 	...
-10005fa4:	10008038 	.word	0x10008038
+10005fa4:	1000803c 	.word	0x1000803c
 10005fa8:	2370      	movs	r3, #112	; 0x70
 10005faa:	7a21      	ldrb	r1, [r4, #8]
 10005fac:	420b      	tst	r3, r1
@@ -12193,10 +12193,10 @@ Disassembly of section .text:
 100062fa:	46c0      	nop			; (mov r8, r8)
 100062fc:	10004eb9 	.word	0x10004eb9
 10006300:	20000f5d 	.word	0x20000f5d
-10006304:	100080a0 	.word	0x100080a0
+10006304:	100080a4 	.word	0x100080a4
 10006308:	200005c4 	.word	0x200005c4
 1000630c:	10006e35 	.word	0x10006e35
-10006310:	10008060 	.word	0x10008060
+10006310:	10008064 	.word	0x10008064
 	...
 10006320:	ab06      	add	r3, sp, #24
 10006322:	1c9a      	adds	r2, r3, #2
@@ -12446,7 +12446,7 @@ Disassembly of section .text:
 1000651e:	46c0      	nop			; (mov r8, r8)
 10006520:	10004eb9 	.word	0x10004eb9
 10006524:	20000f5d 	.word	0x20000f5d
-10006528:	100080a0 	.word	0x100080a0
+10006528:	100080a4 	.word	0x100080a4
 1000652c:	10006d51 	.word	0x10006d51
 10006530:	200005c4 	.word	0x200005c4
 10006534:	10006d25 	.word	0x10006d25
@@ -15555,7 +15555,7 @@ Disassembly of section .data:
 20000444:	00000100                                ....
 
 20000448 <ep_dir_string>:
-20000448:	10007eb8 10007e98                       .~...~..
+20000448:	10007ebc 10007e9c                       .~...~..
 
 20000450 <_usbd_qdef>:
 20000450:	200011d8 000c0010 ffe00000 0000001f     ... ............

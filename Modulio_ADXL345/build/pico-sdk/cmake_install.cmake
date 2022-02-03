@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/pico-sdk/tools/cmake_install.cmake")
-  include("/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/pico-sdk/src/cmake_install.cmake")
-  include("/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_sLCD/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/pastelmagic/tmp/TMP/Modulio/Proj/Modulio_Pico/RaspiPico/Modulio_ADXL345/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 
